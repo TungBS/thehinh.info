@@ -25,13 +25,13 @@
             @csrf
             <div class="form-group">
                 <label for="name">Email <span class="cRed">(*)</span></label>
-                <input name="email" id="name" type="email" class="form-control" placeholder="buisontung1997@gmail.com">
+                <input name="email" id="name" type="email" class="form-control" placeholder="...@gmail">
                 @if ($errors->first('email'))
                 <span class="text-danger">{{ $errors->first('email') }}</span>
                 @endif
             </div>
             <div class="form-group">
-                <label for="phone">Điện thoại <span class="cRed">(*)</span></label>
+                <label for="phone">Mật khẩu <span class="cRed">(*)</span></label>
                 <input name="password" id="phone" type="password" placeholder="********" class="form-control">
                 @if ($errors->first('password'))
                 <span class="text-danger">{{ $errors->first('password') }}</span>

@@ -27,7 +27,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Email <span class="cRed">(*)</span></label>
-                    <input name="email" id="name" required="" type="email" class="form-control" placeholder="buisontung1997@gmail.com">
+                    <input name="email" id="name" required="" type="email" class="form-control" placeholder="...@gmail.com">
                     @if ($errors->first('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
